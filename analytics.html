@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analytics - Nirmal Popat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --success: #059669;
+            --bg: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text: #1f2937;
+            --text-secondary: #6b7280;
+            --border: #e5e7eb;
+            --card: #ffffff;
+            --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-secondary);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border-left: 4px solid var(--primary);
+        }
+
+        .stat-card.success {
+            border-left-color: var(--success);
+        }
+
+        .stat-card .icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .stat-card.success .icon {
+            color: var(--success);
+        }
+
+        .stat-card .value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card .label {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .info-section {
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .info-section h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--card);
+        }
+
+        .actions {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .actions .btn {
+            margin: 0 0.5rem;
+        }
+
+        .note {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            color: #92400e;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .stat-card {
+                padding: 1.5rem;
+            }
+
+            .actions .btn {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-chart-line"></i> Resume Analytics</h1>
+            <p>Track visitor statistics for Nirmal Popat's Resume</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="icon"><i class="fas fa-eye"></i></div>
+                <div class="value" id="totalVisits">0</div>
+                <div class="label">Total Page Views</div>
+            </div>
+
+            <div class="stat-card success">
+                <div class="icon"><i class="fas fa-users"></i></div>
+                <div class="value" id="uniqueVisits">0</div>
+                <div class="label">Unique Visitors</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="icon"><i class="fas fa-calendar"></i></div>
+                <div class="value" id="daysSinceFirst">0</div>
+                <div class="label">Days Since First Visit</div>
+            </div>
+
+            <div class="stat-card success">
+                <div class="icon"><i class="fas fa-clock"></i></div>
+                <div class="value" id="lastVisitTime">Never</div>
+                <div class="label">Last Visit</div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3><i class="fas fa-info-circle"></i> Analytics Information</h3>
+            <ul class="info-list">
+                <li>
+                    <span>First Visit:</span>
+                    <span id="firstVisit">Not recorded</span>
+                </li>
+                <li>
+                    <span>Browser Storage:</span>
+                    <span id="storageInfo">Local Storage</span>
+                </li>
+                <li>
+                    <span>Tracking Method:</span>
+                    <span>Client-side (Privacy-friendly)</span>
+                </li>
+                <li>
+                    <span>Data Retention:</span>
+                    <span>Stored locally in browser</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h3><i class="fas fa-cog"></i> Available Analytics Options</h3>
+            <ul class="info-list">
+                <li>
+                    <span><strong>Google Analytics 4:</strong></span>
+                    <span>Professional analytics with detailed insights</span>
+                </li>
+                <li>
+                    <span><strong>GitHub Insights:</strong></span>
+                    <span>Basic traffic data in repository settings</span>
+                </li>
+                <li>
+                    <span><strong>Cloudflare Analytics:</strong></span>
+                    <span>Free analytics if using Cloudflare</span>
+                </li>
+                <li>
+                    <span><strong>Simple Analytics:</strong></span>
+                    <span>Privacy-focused alternative to Google Analytics</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="actions">
+            <a href="resume.html" class="btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to Resume
+            </a>
+            <button onclick="refreshStats()" class="btn btn-secondary">
+                <i class="fas fa-sync"></i>
+                Refresh Stats
+            </button>
+            <button onclick="clearStats()" class="btn btn-secondary">
+                <i class="fas fa-trash"></i>
+                Clear Data
+            </button>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> These statistics are stored locally in your browser and only track your own visits. 
+            For comprehensive analytics from all visitors, set up Google Analytics 4 with your own tracking ID.
+        </div>
+    </div>
+
+    <script>
+        function loadStats() {
+            const totalVisits = localStorage.getItem('resumeVisits') || 0;
+            const uniqueVisits = localStorage.getItem('uniqueVisits') || 0;
+            const lastVisit = localStorage.getItem('lastVisit');
+            const firstVisit = localStorage.getItem('firstVisit');
+
+            document.getElementById('totalVisits').textContent = totalVisits;
+            document.getElementById('uniqueVisits').textContent = uniqueVisits;
+
+            if (lastVisit) {
+                const lastVisitDate = new Date(lastVisit);
+                document.getElementById('lastVisitTime').textContent = lastVisitDate.toLocaleDateString();
+                
+                if (!firstVisit) {
+                    localStorage.setItem('firstVisit', lastVisit);
+                }
+            }
+
+            const firstVisitStored = localStorage.getItem('firstVisit');
+            if (firstVisitStored) {
+                const firstVisitDate = new Date(firstVisitStored);
+                document.getElementById('firstVisit').textContent = firstVisitDate.toLocaleDateString();
+                
+                const daysDiff = Math.floor((new Date() - firstVisitDate) / (1000 * 60 * 60 * 24));
+                document.getElementById('daysSinceFirst').textContent = daysDiff;
+            }
+
+            // Check storage size
+            const storageSize = JSON.stringify(localStorage).length;
+            document.getElementById('storageInfo').textContent = `Local Storage (${storageSize} bytes)`;
+        }
+
+        function refreshStats() {
+            loadStats();
+            alert('Statistics refreshed!');
+        }
+
+        function clearStats() {
+            if (confirm('Are you sure you want to clear all analytics data?')) {
+                localStorage.removeItem('resumeVisits');
+                localStorage.removeItem('uniqueVisits');
+                localStorage.removeItem('lastVisit');
+                localStorage.removeItem('lastVisitDate');
+                localStorage.removeItem('firstVisit');
+                loadStats();
+                alert('Analytics data cleared!');
+            }
+        }
+
+        // Load stats on page load
+        loadStats();
+    </script>
+</body>
+</html> 

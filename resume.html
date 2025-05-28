@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <title>Nirmal Popat - Senior Software Developer</title>
+  
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -1741,6 +1751,29 @@
         header.classList.remove('scrolled');
       }
     });
+
+    // Simple visitor counter (localStorage based)
+    function updateVisitorCount() {
+      let visits = localStorage.getItem('resumeVisits') || 0;
+      visits = parseInt(visits) + 1;
+      localStorage.setItem('resumeVisits', visits);
+      localStorage.setItem('lastVisit', new Date().toISOString());
+      
+      // Track unique sessions (daily)
+      const today = new Date().toDateString();
+      const lastVisitDate = localStorage.getItem('lastVisitDate');
+      if (lastVisitDate !== today) {
+        let uniqueVisits = localStorage.getItem('uniqueVisits') || 0;
+        uniqueVisits = parseInt(uniqueVisits) + 1;
+        localStorage.setItem('uniqueVisits', uniqueVisits);
+        localStorage.setItem('lastVisitDate', today);
+      }
+      
+      console.log(`Total visits: ${visits}, Unique visits: ${localStorage.getItem('uniqueVisits') || 1}`);
+    }
+    
+    // Call on page load
+    updateVisitorCount();
 
     // Intersection Observer for animations
     const observerOptions = {
