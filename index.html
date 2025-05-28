@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nirmal Popat - Resume</title>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
-        // Redirect to resume.html immediately
-        window.location.href = './resume.html';
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <script>
+        // Simple visitor counter (localStorage based)
+        function updateVisitorCount() {
+            let visits = localStorage.getItem('resumeVisits') || 0;
+            visits = parseInt(visits) + 1;
+            localStorage.setItem('resumeVisits', visits);
+            localStorage.setItem('lastVisit', new Date().toISOString());
+            
+            // Track unique sessions (daily)
+            const today = new Date().toDateString();
+            const lastVisitDate = localStorage.getItem('lastVisitDate');
+            if (lastVisitDate !== today) {
+                let uniqueVisits = localStorage.getItem('uniqueVisits') || 0;
+                uniqueVisits = parseInt(uniqueVisits) + 1;
+                localStorage.setItem('uniqueVisits', uniqueVisits);
+                localStorage.setItem('lastVisitDate', today);
+            }
+            
+            // Set first visit if not exists
+            if (!localStorage.getItem('firstVisit')) {
+                localStorage.setItem('firstVisit', new Date().toISOString());
+            }
+            
+            console.log(`Total visits: ${visits}, Unique visits: ${localStorage.getItem('uniqueVisits') || 1}`);
+        }
+        
+        // Call analytics before redirect
+        updateVisitorCount();
+        
+        // Redirect to resume.html after a short delay to ensure analytics are captured
+        setTimeout(() => {
+            window.location.href = './resume.html';
+        }, 100);
     </script>
     <style>
         body {
