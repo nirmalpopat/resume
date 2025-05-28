@@ -1,0 +1,104 @@
+# Quick Indexing URLs - Submit These Immediately
+
+## Primary URLs to Submit
+https://nirmalpopat.github.io/resume/
+https://nirmalpopat.github.io/resume/resume.html
+https://nirmalpopat.github.io/resume/sitemap.xml
+
+## Google Search Console
+1. Go to: https://search.google.com/search-console/
+2. Add property: https://nirmalpopat.github.io/resume/
+3. Submit sitemap: https://nirmalpopat.github.io/resume/sitemap.xml
+4. Use URL Inspection tool for each URL above
+
+## Bing Webmaster Tools
+1. Go to: https://www.bing.com/webmasters/
+2. Add site: https://nirmalpopat.github.io/resume/
+3. Submit URLs individually
+
+## Direct Submission Services
+
+### Ping-o-Matic (Submit Now)
+URL: http://pingomatic.com/
+Submit: https://nirmalpopat.github.io/resume/
+
+### Wayback Machine (Archive Now)
+URL: https://web.archive.org/save/
+Submit: https://nirmalpopat.github.io/resume/
+
+### Google URL Submission (Direct)
+URL: https://www.google.com/ping?sitemap=https://nirmalpopat.github.io/resume/sitemap.xml
+
+### Bing URL Submission (Direct)
+URL: https://www.bing.com/webmasters/submiturl
+Submit each URL individually
+
+## Social Bookmarking (Create Backlinks)
+
+### Reddit (High Authority)
+- r/Python
+- r/webdev  
+- r/cscareerquestions
+- r/programming
+- r/django
+
+### Professional Networks
+- LinkedIn (Post + Profile)
+- AngelList
+- Wellfound
+- Stack Overflow Profile
+
+### Developer Communities
+- Dev.to
+- Hacker News
+- IndieHackers
+- Lobsters
+- ProductHunt
+
+## Search Engine Specific
+
+### Google
+- Submit to Search Console
+- Share on Google My Business (if you have one)
+- Add to Google Sites (if you have one)
+
+### Bing
+- Submit to Bing Webmaster Tools
+- Share on Microsoft platforms
+
+### DuckDuckGo
+- Submit to: https://duckduckgo.com/duckduckbot
+
+### Yandex
+- Submit to: https://webmaster.yandex.com/
+
+## Immediate Actions (Do in Next 30 Minutes)
+1. ✅ Submit to Google Search Console
+2. ✅ Submit to Bing Webmaster Tools  
+3. ✅ Post on LinkedIn
+4. ✅ Share on Twitter/X
+5. ✅ Archive on Wayback Machine
+6. ✅ Submit to Ping-o-Matic
+7. ✅ Update GitHub profile
+8. ✅ Post on Reddit (r/Python)
+
+## Check Indexing Status
+Use these search queries to check if indexed:
+
+site:nirmalpopat.github.io/resume/
+"Nirmal Popat" backend developer
+"Nirmal Popat" python developer
+"Nirmal Popat" API architect
+
+## Expected Timeline
+- Social media shares: Immediate backlinks
+- Google indexing: 1-7 days (with Search Console)
+- Bing indexing: 1-3 days
+- Full SEO visibility: 2-4 weeks
+
+## Pro Tips
+1. Share on multiple platforms simultaneously
+2. Use relevant hashtags and keywords
+3. Engage with any comments/responses
+4. Update your email signature immediately
+5. Add to all your social media profiles 
