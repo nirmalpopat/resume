@@ -1,0 +1,144 @@
+NIRMAL POPAT
+SOFTW ARE DEVELOPER
+Python
+Flask, Fast API
+Product management
+Django Rest Framework
+GraphQL
+Elasticsearch, Dynamo DB, Databricks
+AWS(EC2, RDS, ECR, ECS, S3),Azure
+GitHub
+Docker
+Database designing
+Testing, Unit Testing
+Celery
+Redis, Rabbit MQ
+Postgres, SQL
+NumPy, pandas
+Postman
+Jenkins
+Problem solving
+Javascript
+HTML, CSS
+Token authentication, permisison
+Testproject test automation tool
+Jmeter
+ORM, sqlalchemy
+Apache
+Web ScrapingSKILLS+918200859223
+Gujarat, Indiapopatnirmal2233@gmail.comAs a seasoned software developer with over 9 years of experience, I
+excel in innovating software designs, conducting rigorous testing, and
+proficiently coding and debugging applications. My expertise extends
+to database and API design, enabling me to craft effective software
+solutions and adeptly troubleshoot issues as they arise. I am eager to
+bring my skills and experience to AP Inc., contributing to its success
+through my commitment to excellence in software development.PROFILE
+EXPERIENCE
+AlgoAcharya
+Jan-2024- CurrentLEAD TECH ARCHITECT
+I lead the development of algorithmic trading products, overseeing
+a team of developers and participating in both technical and
+business discussions. My responsibilities include database design
+using sharding and master-slave architecture, REST API
+development, and ensuring high-quality code. We utilize Docker
+for containerization, Jenkins for CI/CD pipelines, AWS RDS for
+database management, and RabbitMQ for data transmission. I
+implemented Nginx with caching and load balancing, along with
+encryption techniques to protect sensitive data.
+I collaborate with testers and front-end developers, document our
+APIs, and deploy code on AWS. My role involves creating and
+managing JIRA tickets, assigning tasks, and performing PR
+reviews. Additionally, I developed automation for algo trading
+using AWS Lambda and created data visualizations for users. I
+tackle production bugs, participate in client meetings, and oversee
+junior team members' tasks. My experience in software
+development, leadership, and strong communication skills make
+me a valuable asset to complex trading projects.Nirmal Popat SOFTWARE ENGINEER
+F r e e l a n c i n g
+2-Aug-2020, 26-April-2022
+As a key contributor to an internship platform project, I had the opportunity to work on the project from its inception. I took on a
+wide range of responsibilities, including designing and writing models, Swagger documentation, and test cases, as well as
+implementing critical features for the platform's REST APIs.
+The platform itself is designed to allow students to register for internships and companies to post their job openings. I played a
+pivotal role in ensuring that these core functionalities were implemented effectively and efficiently.
+Throughout the project, I worked closely with my colleagues to ensure that our work met high-quality standards and that we
+delivered results that exceeded client expectations. Thanks to my extensive experience in software development, I was able to
+deliver excellent results while working within tight deadlines.
+Overall, I'm proud of the work that I accomplished on this project, and I'm confident that my skills and experience will be valuable
+to any team working on complex software solutions in the future.
+SOFTWARE DEVELOPER
+As a software developer, I was responsible for handling REST APIs and creating web applications according to company
+requirements. One of my key responsibilities was to create REST APIs, including hosting, authentication, and database design. In
+addition, I was also responsible for integrating third-party APIs like Twilio, Message91, and AWS into our applications.
+A key part of my role was to create APIs based on visual design mockups created in Figma. This required close collaboration with
+design teams to ensure that our APIs met the company's visual and functional requirements.
+Throughout my time in this role, I developed a deep understanding of how to create effective and efficient APIs that meet the
+needs of modern web applications. Thanks to my extensive experience in API design and integration, I was able to deliver
+excellent results while working within tight deadlines.
+Overall, I'm proud of the work that I accomplished in this role, and I'm confident that my skills and experience will be valuable to
+any team working on complex software solutions in the future.W e b 4 B u d d y
+Jun 1, 2017, to August 1, 2020H a r d w i n
+May-2022- December-2023SENIOR SOFTWARE DEVELOPER
+I lead a team of 8 developers in a healthcare software project, where I'm responsible for database design, REST API development,
+and ensuring high-quality code. We use PostgreSQL as our database, Docker for containerization, and employ CI/CD pipelines for
+automation. Additionally, we utilize Redis, RabbitMQ, Apache and Celery for various aspects of our project, while also
+implementing multithreading for enhanced performance.
+I collaborate closely with testers and front-end developers to meet client needs, document our APIs, and deploy our code on AWS.
+We work in a microservice architecture using the Tooljet GUI tool. I also tackle production bugs, participate in client meetings,
+design APIs and databases, and oversee junior team members' tasks. My role bridges the gap between front-end developers and
+testing, fostering effective collaboration within our team.
+My experience in software development and leadership, along with strong communication skills, make me an asset to complex
+healthcare projects.EXPERIENCE GENAI APP
+Developed a robust system leveraging both open-source and closed-source models for natural language processing and
+machine learning. The project integrated models from Hugging Face (open-source) and APIs from OpenAI and Gemini (closed-
+source) to deliver powerful AI-driven functionalities. The system allows users to upload PDF, CSV, Excel, and MP3 files and
+obtain answers via API. Users can compare and rate answers from multiple LLMs, fostering better insights and decision-making.
+Handled Docker for containerization, AWS for deployment, Nginx for load balancing and caching, and Jenkins for CI/CD
+pipelines, managing the DevOps aspect to ensure seamless integration and deployment processes. Developed REST APIs and
+business logic in Python, implemented file validation, worked with pickle files and vector databases, and built a strong error-
+handling mechanism. Additionally, created a chat and conversation system for dynamic user interactions.
+Led the development of the product, coordinating between various teams and ensuring timely delivery of features and
+enhancements. This comprehensive approach ensured high reliability, stability, and efficiency of the system, providing a
+versatile and powerful tool for users.PROJECTS
+HEALTHCARE
+Our healthcare-focused project revolves around a Django REST API-driven backend, simplifying the intricate task of code
+auditing within clinical charts. The system involves multiple essential roles, including coders, L1 and L2 auditors, culminating
+with L3 auditors as the final authority. These auditors diligently review medical codes within clinical charts, ensuring accuracy
+and compliance. To manage data efficiently, we've employed Django database routing, which enables us to work with
+multiple databases, keeping sensitive healthcare data segregated and secure.
+For robust security measures, we've implemented SAML and OneAuth authentication methods, safeguarding sensitive
+patient information. Our commitment to performance optimization is evident through our use of a master-slave architecture
+and sharding techniques, ensuring that our database operations remain efficient and scalable.
+Our tech stack includes Celery and RabbitMQ for asynchronous processing, Azure-based CI/CD pipelines for seamless
+deployments, and Docker for containerization. Nginx serves as our web server, guaranteeing reliable and high-performance
+application delivery. This project underscores our dedication to simplifying healthcare coding processes while prioritizing data
+security and performance.AUTOMATED VULNERABILITY MANAGEMENT INTEGRATION
+In the project I'm actively engaged in, I harness the capabilities of Python to automate the integration of two essential security
+tools, Invicti and Veracode, into our workflow. This automation facilitates the efficient identification of vulnerabilities within our
+project and the automatic creation of issue tickets in Jira for streamlined management. Leveraging the power of Docker, we
+containerize our applications, ensuring consistency and ease of deployment. We store and manage these containers using AWS
+Elastic Container Registry (ECR), while our applications run seamlessly on AWS Elastic Compute Cloud (EC2) instances.
+Additionally, we employ AWS Lambda functions to orchestrate various tasks, enhancing the scalability and efficiency of our
+processes. To ensure the robustness and maintainability of our Python code, we adhere to best practices and utilize Python
+design patterns, enabling us to write clean, efficient, and maintainable code. This comprehensive approach enhances security,
+reduces manual effort, and fosters seamless collaboration between our development and security teams, ensuring the swift
+resolution of potential threats and the delivery of secure software. CUSTOMIZED PIZZA ORDERING PLATFORM
+Our project centers around a customized pizza ordering platform, with a Flask-based microservice architecture powering the
+backend. This innovative platform seamlessly integrates with renowned third-party delivery services such as DoorDash, Uber
+Eats, and SkipTheDishes. At its core, it empowers customers to craft personalized pizzas tailored to their exact preferences,
+putting them in control of every delicious detail.
+The project utilizes a dual-database approach for efficient data management. Google Cloud Platform's Datastore, a NoSQL
+database, handles non-relational data, while PostgreSQL manages structured relational data, ensuring data integrity and
+scalability.
+To automate tasks, we rely on Jenkins, ensuring that our workflow is streamlined and efficient. Adhering to Python best
+practices outlined in PEP 8, we maintain clean and readable code. We prioritize code quality through extensive unit testing
+and integration testing, validating the robustness and reliability of our platform.
+In summary, our Customized Pizza Ordering Platform represents a fusion of culinary creativity and technical excellence. It
+empowers customers to design their dream pizzas while adhering to the highest standards of software development and
+automation.
+ERP SYSTEM 
+I built and developed an ERP system using FastAPI, managing the entire lifecycle from development to deployment. This
+included Dockerizing the application and hosting it in AWS ECR and ECS. I implemented load balancing and a rolling update
+strategy to ensure zero downtime, and I created task definitions and clusters for efficient management. I built multi-stage
+Docker images to optimize memory usage. Additionally, I handled all database design, API documentation, task distribution,
+and DevOps tasks, including setting up message queues with RabbitMQ and configuring Nginx.
